@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+}
+
+div.content {
+    padding-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-color: darkred;
+    border-radius: 5px;
+    height: 50px;
+}
+
+nav ul li {
+    margin-right: 20px;
+    background-color: rgb(90, 0, 0);
+    padding: 10px 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: pink;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: pink;
+    transition: width 0.3s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+strong {
+    color: red;
+}
+
+strong.hidden {
+    color: blanchedalmond;
+}
+
+strong.hidden:hover {
+    color: red;
+}
+
+p {
+    font-size: larger;
+    font-weight: 500;
+}
+
+div.incident {
+    background-color: bisque;
+    width: fit-content;
+}
+
+img {
+    float: left;
+    margin-right: 15px;
+}
